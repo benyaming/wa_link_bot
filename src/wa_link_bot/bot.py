@@ -30,7 +30,7 @@ async def phone_to_whatsapp(message: Message) -> None:
         default_country_code=_default_country_code(),
     )
     if phone_number is None:
-        await message.answer("Send a phone number, for example: 0544445811")
+        await message.answer("Send a phone number, for example: 0531234567")
         return
 
     await message.answer(whatsapp_link(phone_number))
